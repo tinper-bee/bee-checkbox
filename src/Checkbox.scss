@@ -5,6 +5,7 @@
 .u-checkbox {
 	&.disabled .u-checkbox-label{
 		cursor: not-allowed;
+		opacity: 0.5;
 	}
 	input[type='checkbox']{
 		display: none;

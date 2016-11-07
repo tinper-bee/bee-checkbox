@@ -9,7 +9,7 @@ class Demo extends Component {
 				<Checkbox colors="info"> checkbox</Checkbox>
 				<Checkbox colors="success"> checkbox</Checkbox>
 				<Checkbox colors="dark"> checkbox</Checkbox>
-				<Checkbox colors="danger"> checkbox</Checkbox>
+				<Checkbox colors="danger" checked disabled> checkbox</Checkbox>
 				<Checkbox disabled> checkbox</Checkbox>
 			</div>
 		)
