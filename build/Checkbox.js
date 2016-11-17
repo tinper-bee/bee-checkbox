@@ -98,7 +98,7 @@ var Checkbox = function (_React$Component) {
 
     return _react2["default"].createElement(
       'label',
-      { refs: 'checkbox', className: (0, _classnames2["default"])(className, classes), onClick: this.changeState.bind(this) },
+      { className: (0, _classnames2["default"])(className, classes), onClick: this.changeState.bind(this) },
       input,
       _react2["default"].createElement(
         'label',

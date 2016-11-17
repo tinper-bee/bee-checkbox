@@ -67,7 +67,7 @@ class Checkbox extends React.Component {
     }
 
     return (
-        <label refs="checkbox" className={classNames(className, classes)} onClick={this.changeState.bind(this)}>
+        <label className={classNames(className, classes)} onClick={this.changeState.bind(this)}>
           {input}
           <label className="u-checkbox-label">{children}</label>
         </label>
