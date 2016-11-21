@@ -1,7 +1,7 @@
 # bee-checkbox
 [![npm version](https://img.shields.io/npm/v/bee-checkbox.svg)](https://www.npmjs.com/package/bee-checkbox)
 [![Build Status](https://img.shields.io/travis/tinper-bee/generator-tinper-bee/master.svg)](https://travis-ci.org/tinper-bee/bee-checkbox)
-[![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-checkbox.svg)](https://david-dm.org/tinper-bee/bee-checkbox#info=devDependencies)
+[![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-checkbox/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-checkbox?branch=master)
 
 复选框
 
