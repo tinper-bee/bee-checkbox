@@ -31,15 +31,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var propTypes = {
 
-  colors: _react2["default"].PropTypes.oneOf(['', 'dark', 'success', 'info', 'warning', 'danger', 'primary']),
+  colors: _react.PropTypes.oneOf(['', 'dark', 'success', 'info', 'warning', 'danger', 'primary']),
 
-  disabled: _react2["default"].PropTypes.bool
+  disabled: _react.PropTypes.bool
 
 };
 
 var defaultProps = {
   disabled: false,
-  colors: 'primary'
+  colors: 'primary',
+  clsPrefix: 'u-checkbox'
 };
 var clsPrefix = 'u-checkbox';
 
@@ -70,8 +71,9 @@ var Checkbox = function (_React$Component) {
     var size = _props.size;
     var className = _props.className;
     var children = _props.children;
+    var clsPrefix = _props.clsPrefix;
 
-    var others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children']);
+    var others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children', 'clsPrefix']);
 
     var input = _react2["default"].createElement('input', _extends({}, others, {
       type: 'checkbox',
@@ -79,7 +81,6 @@ var Checkbox = function (_React$Component) {
     }));
 
     var classes = {
-      'u-checkbox': true,
       'is-checked': this.state.checked,
       disabled: disabled
     };
@@ -96,9 +97,11 @@ var Checkbox = function (_React$Component) {
       classes[clsPrefix + '-' + size] = true;
     }
 
+    var classNames = (0, _classnames2["default"])(clsPrefix, classes);
+
     return _react2["default"].createElement(
       'label',
-      { className: (0, _classnames2["default"])(className, classes), onClick: this.changeState.bind(this) },
+      { className: classNames, onClick: this.changeState.bind(this) },
       input,
       _react2["default"].createElement(
         'label',

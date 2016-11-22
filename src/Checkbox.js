@@ -1,19 +1,20 @@
-import classNames from 'classnames';
-import React from 'react';
+import classnames from 'classnames';
+import React, { PropTypes } from 'react';
 //import warning from 'warning';
 
 
 const propTypes = {
 
-  colors: React.PropTypes.oneOf(['', 'dark', 'success', 'info', 'warning', 'danger','primary']),
+  colors: PropTypes.oneOf(['', 'dark', 'success', 'info', 'warning', 'danger','primary']),
 
-  disabled: React.PropTypes.bool,
+  disabled: PropTypes.bool,
   
 };
 
 const defaultProps = {
   disabled: false,
-  colors: 'primary'
+  colors: 'primary',
+  clsPrefix: 'u-checkbox'
 };
 const clsPrefix = 'u-checkbox';
 class Checkbox extends React.Component {
@@ -36,6 +37,7 @@ class Checkbox extends React.Component {
 	      size,
 	      className,
 	      children,
+        clsPrefix,
 	      ...others
     	} = this.props;
 
@@ -49,7 +51,6 @@ class Checkbox extends React.Component {
     );
 
     const classes = {
-    	'u-checkbox':true,
     	'is-checked':this.state.checked,
     	disabled
     };
@@ -66,8 +67,10 @@ class Checkbox extends React.Component {
       classes[`${clsPrefix}-${size}`] = true;
     }
 
+    let classNames = classnames(clsPrefix, classes);
+
     return (
-        <label className={classNames(className, classes)} onClick={this.changeState.bind(this)}>
+        <label className={classNames} onClick={this.changeState.bind(this)}>
           {input}
           <label className="u-checkbox-label">{children}</label>
         </label>

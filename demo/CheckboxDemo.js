@@ -5,6 +5,7 @@ class Demo extends Component {
 	render() {
 		return( 
 			<div>
+
 				<Checkbox colors="danger"> checkbox</Checkbox>
 				<Checkbox colors="info"> checkbox</Checkbox>
 				<Checkbox colors="success"> checkbox</Checkbox>

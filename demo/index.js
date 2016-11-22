@@ -16,6 +16,7 @@ function demo1 () {
 function demo2 () {
 	return (
 		<div className="demo-checkbox">
+		
 			<Checkbox colors="danger"> checkbox</Checkbox>
 			<Checkbox colors="info"> checkbox</Checkbox>
 			<Checkbox colors="success"> checkbox</Checkbox>
