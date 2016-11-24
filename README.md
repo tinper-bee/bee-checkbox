@@ -18,7 +18,7 @@ npm install --save bee-checkbox
 import Checkbox from 'bee-checkbox';
 
 React.render(<div>
-        <Checkbox colorS="primary" />
+        <Checkbox colors="primary" />
 </div>, document.getElementById('target'));
 
 ```
