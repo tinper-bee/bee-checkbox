@@ -50,7 +50,7 @@ class Checkbox extends React.Component {
         />
     );
 
-    const classes = {
+    let classes = {
     	'is-checked':this.state.checked,
     	disabled
     };
