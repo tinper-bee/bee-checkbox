@@ -12,34 +12,7 @@ const CARET = <i className="uf uf-chevronarrowdown"></i>;
 const CARETUP = <i className="uf uf-chevronarrowup"></i>;
 
 
-/**
- * @title Checkbox
- * @description `checked` 参数设置是否选中，`disabled`设置是否可用。
- */
-class Demo1 extends Component {
-	render () {
-		return (
-			<div className="demo-checkbox">
-				<Checkbox disabled> checkbox</Checkbox>
-				<Checkbox checked> checkbox</Checkbox>
-			</div>
-		)
-	}
-}/**
- * @title 多颜色`Checkbox`
- * @description `colors`参数控制背景色
- */
-class Demo2 extends Component {
-	render(){
-		return (
-			<div className="demo-checkbox">
-				<Checkbox colors="info"> checkbox</Checkbox>
-				<Checkbox colors="dark"> checkbox</Checkbox>
-			</div>
-		)
-	}
-}var DemoArray = [{"example":<Demo1 />,"title":" Checkbox","code":"/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox disabled> checkbox</Checkbox>\n\t\t\t\t<Checkbox checked> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `checked` 参数设置是否选中，`disabled`"},{"example":<Demo2 />,"title":" 多颜色`Checkbox`","code":"/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\"> checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\"> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `colors`参数控制背景色"}]
-
+{demolist}
 
 class Demo extends Component {
     constructor(props){
