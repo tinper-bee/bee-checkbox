@@ -34,7 +34,8 @@
 /* Shadows */
 /* Animations */
 .u-checkbox {
-  width: 18px; }
+  width: 18px;
+  display: inline-block; }
   .u-checkbox.disabled .u-checkbox-label {
     cursor: not-allowed;
     opacity: 0.5; }
