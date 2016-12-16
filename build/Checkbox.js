@@ -101,7 +101,7 @@ var Checkbox = function (_React$Component) {
 
     return _react2["default"].createElement(
       'label',
-      { className: classNames, onClick: this.changeState.bind(this) },
+      _extends({}, others, { className: classNames, onClick: this.changeState.bind(this) }),
       input,
       _react2["default"].createElement(
         'label',

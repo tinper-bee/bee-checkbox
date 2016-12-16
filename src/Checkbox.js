@@ -70,7 +70,7 @@ class Checkbox extends React.Component {
     let classNames = classnames(clsPrefix, classes);
 
     return (
-        <label className={classNames} onClick={this.changeState.bind(this)}>
+        <label {...others} className={classNames} onClick={this.changeState.bind(this)}>
           {input}
           <label className="u-checkbox-label">{children}</label>
         </label>
