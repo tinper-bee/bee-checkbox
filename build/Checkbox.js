@@ -65,15 +65,14 @@ var Checkbox = function (_React$Component) {
   };
 
   Checkbox.prototype.render = function render() {
-    var _props = this.props;
-    var disabled = _props.disabled;
-    var colors = _props.colors;
-    var size = _props.size;
-    var className = _props.className;
-    var children = _props.children;
-    var clsPrefix = _props.clsPrefix;
-
-    var others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children', 'clsPrefix']);
+    var _props = this.props,
+        disabled = _props.disabled,
+        colors = _props.colors,
+        size = _props.size,
+        className = _props.className,
+        children = _props.children,
+        clsPrefix = _props.clsPrefix,
+        others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children', 'clsPrefix']);
 
     var input = _react2["default"].createElement('input', _extends({}, others, {
       type: 'checkbox',
