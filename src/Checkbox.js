@@ -14,7 +14,8 @@ const propTypes = {
 const defaultProps = {
   disabled: false,
   colors: 'primary',
-  clsPrefix: 'u-checkbox'
+  clsPrefix: 'u-checkbox',
+  checked:false
 };
 const clsPrefix = 'u-checkbox';
 class Checkbox extends React.Component {
@@ -37,6 +38,7 @@ class Checkbox extends React.Component {
 	      size,
 	      className,
 	      children,
+        checked,
         clsPrefix,
 	      ...others
     	} = this.props;
