@@ -40,7 +40,8 @@ var propTypes = {
 var defaultProps = {
   disabled: false,
   colors: 'primary',
-  clsPrefix: 'u-checkbox'
+  clsPrefix: 'u-checkbox',
+  checked: false
 };
 var clsPrefix = 'u-checkbox';
 
@@ -71,8 +72,9 @@ var Checkbox = function (_React$Component) {
         size = _props.size,
         className = _props.className,
         children = _props.children,
+        checked = _props.checked,
         clsPrefix = _props.clsPrefix,
-        others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children', 'clsPrefix']);
+        others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children', 'checked', 'clsPrefix']);
 
     var input = _react2["default"].createElement('input', _extends({}, others, {
       type: 'checkbox',
