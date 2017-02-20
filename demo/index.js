@@ -17,11 +17,18 @@ const CARETUP = <i className="uf uf-arrow-up"></i>;
  * @description `checked` 参数设置是否选中，`disabled`设置是否可用。
  */
 class Demo1 extends Component {
+	constructor(props) {
+		super(props);
+		this.onChange = this.onChange.bind(this);
+	}
+	onChange() {
+		console.log("hook");
+	}
 	render () {
 		return (
 			<div className="demo-checkbox">
 				<Checkbox disabled> checkbox</Checkbox>
-				<Checkbox checked> checkbox</Checkbox>
+				<Checkbox ref="test" checked onChange={this.onChange}> checkbox</Checkbox>
 			</div>
 		)
 	}
@@ -38,7 +45,7 @@ class Demo2 extends Component {
 			</div>
 		)
 	}
-}var DemoArray = [{"example":<Demo1 />,"title":" Checkbox","code":"/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\nclass Demo1 extends Component {\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox disabled> checkbox</Checkbox>\n\t\t\t\t<Checkbox checked> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `checked` 参数设置是否选中，`disabled`设置是否可用。"},{"example":<Demo2 />,"title":" 多颜色`Checkbox`","code":"/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\"> checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\"> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `colors`参数控制背景色"}]
+}var DemoArray = [{"example":<Demo1 />,"title":" Checkbox","code":"/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\nclass Demo1 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.onChange = this.onChange.bind(this);\n\t}\n\tonChange() {\n\t\tconsole.log(\"hook\");\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox disabled> checkbox</Checkbox>\n\t\t\t\t<Checkbox ref=\"test\" checked onChange={this.onChange}> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `checked` 参数设置是否选中，`disabled`设置是否可用。"},{"example":<Demo2 />,"title":" 多颜色`Checkbox`","code":"/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\"> checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\"> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `colors`参数控制背景色"}]
 
 
 class Demo extends Component {

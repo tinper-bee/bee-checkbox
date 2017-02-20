@@ -26,10 +26,15 @@ class Checkbox extends React.Component {
 		}
 	}
 	changeState () {
+    const {onChange} = this.props;
 		if(this.props.disabled == false){
 			this.setState({checked:!this.state.checked});
 		}
+    if(onChange) {
+      onChange();
+    }
 	}
+
 
   	render() {
 	    const {
@@ -40,6 +45,7 @@ class Checkbox extends React.Component {
 	      children,
         checked,
         clsPrefix,
+        onChange,
 	      ...others
     	} = this.props;
 
