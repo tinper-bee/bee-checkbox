@@ -22,6 +22,7 @@ class Demo1 extends Component {
 		this.onChange = this.onChange.bind(this);
 	}
 	onChange() {
+		debugger;
 		console.log("hook");
 	}
 	render () {
@@ -45,7 +46,39 @@ class Demo2 extends Component {
 			</div>
 		)
 	}
-}var DemoArray = [{"example":<Demo1 />,"title":" Checkbox","code":"/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\nclass Demo1 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.onChange = this.onChange.bind(this);\n\t}\n\tonChange() {\n\t\tconsole.log(\"hook\");\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox disabled> checkbox</Checkbox>\n\t\t\t\t<Checkbox ref=\"test\" checked onChange={this.onChange}> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `checked` 参数设置是否选中，`disabled`设置是否可用。"},{"example":<Demo2 />,"title":" 多颜色`Checkbox`","code":"/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\"> checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\"> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `colors`参数控制背景色"}]
+}/**
+ * @title Checkbox
+ * @description `checked` 参数设置是否选中，`disabled`设置是否可用。
+ */
+class Demo3 extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			checked: false,
+			checked2: false,
+			checkedAll: false,
+		}
+		this.onChange = this.onChange.bind(this);
+		this.onCheckedAll = this.onCheckedAll.bind(this);
+	}
+	onChange() {
+		this.setState({checkedAll:!this.state.checkedAll})
+	}
+	onCheckedAll() {
+		this.setState({checkedAll:!this.state.checkedAll,checked:!this.state.checked});
+	}
+	changeCheck() {
+		this.setState({checked:!this.state.checked});
+	}
+	render () {
+		return (
+			<div className="demo-checkbox">
+				<button onClick={this.changeCheck.bind(this)}>change checkbox</button>
+				<Checkbox checked={this.state.checked} onChange={this.onChange}> checkbox2</Checkbox>
+			</div>
+		)
+	}
+}var DemoArray = [{"example":<Demo1 />,"title":" Checkbox","code":"/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\nclass Demo1 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.onChange = this.onChange.bind(this);\n\t}\n\tonChange() {\n\t\tdebugger;\n\t\tconsole.log(\"hook\");\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox disabled> checkbox</Checkbox>\n\t\t\t\t<Checkbox ref=\"test\" checked onChange={this.onChange}> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `checked` 参数设置是否选中，`disabled`设置是否可用。"},{"example":<Demo2 />,"title":" 多颜色`Checkbox`","code":"/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\"> checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\"> checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `colors`参数控制背景色"},{"example":<Demo3 />,"title":" Checkbox","code":"/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\nclass Demo3 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\tchecked: false,\n\t\t\tchecked2: false,\n\t\t\tcheckedAll: false,\n\t\t}\n\t\tthis.onChange = this.onChange.bind(this);\n\t\tthis.onCheckedAll = this.onCheckedAll.bind(this);\n\t}\n\tonChange() {\n\t\tthis.setState({checkedAll:!this.state.checkedAll})\n\t}\n\tonCheckedAll() {\n\t\tthis.setState({checkedAll:!this.state.checkedAll,checked:!this.state.checked});\n\t}\n\tchangeCheck() {\n\t\tthis.setState({checked:!this.state.checked});\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<button onClick={this.changeCheck.bind(this)}>change checkbox</button>\n\t\t\t\t<Checkbox checked={this.state.checked} onChange={this.onChange}> checkbox2</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}","desc":" `checked` 参数设置是否选中，`disabled`设置是否可用。"}]
 
 
 class Demo extends Component {

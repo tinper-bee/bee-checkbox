@@ -8,6 +8,7 @@ class Demo1 extends Component {
 		this.onChange = this.onChange.bind(this);
 	}
 	onChange() {
+		debugger;
 		console.log("hook");
 	}
 	render () {
