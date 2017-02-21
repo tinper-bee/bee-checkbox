@@ -59,6 +59,10 @@ var Checkbox = function (_React$Component) {
     return _this;
   }
 
+  Checkbox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProp) {
+    this.setState({ checked: nextProp.checked });
+  };
+
   Checkbox.prototype.changeState = function changeState() {
     var onChange = this.props.onChange;
 
