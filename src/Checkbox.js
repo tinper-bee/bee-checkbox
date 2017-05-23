@@ -8,7 +8,7 @@ const propTypes = {
   colors: PropTypes.oneOf(['', 'dark', 'success', 'info', 'warning', 'danger','primary']),
 
   disabled: PropTypes.bool,
-  
+
 };
 
 const defaultProps = {
@@ -67,10 +67,6 @@ class Checkbox extends React.Component {
     	'is-checked':this.state.checked,
     	disabled
     };
-
-    if (colors) {
-        classes[`${clsPrefix}-${colors}`] = true;
-    }
 
     if (colors) {
         classes[`${clsPrefix}-${colors}`] = true;

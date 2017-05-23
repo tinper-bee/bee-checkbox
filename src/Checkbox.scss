@@ -3,7 +3,6 @@
 
 
 .u-checkbox {
-	width: 18px;
 	display: inline-block;
 	&.disabled .u-checkbox-label{
 		cursor: not-allowed;
@@ -26,7 +25,7 @@
 		    line-height: 18px;
 		    font-size: 14px;
 		}
-	} 
+	}
 	.u-checkbox-label {
 		cursor: pointer;
 	    display: inline-block;
@@ -81,10 +80,10 @@
 		    box-shadow: inset 0 0 0 10px $checkbox-success-bg;
 		    border-color:$checkbox-success-bg;
 		}
-	} 
+	}
 	.u-checkbox-label {
 	    color: $checkbox-success-bg;
-	    
+
 	}
 }
 // Modifier: `checkbox-warning`
@@ -98,10 +97,10 @@
 		    box-shadow: inset 0 0 0 10px $checkbox-warning-bg;
 		    border-color:$checkbox-warning-bg;
 		}
-	} 
+	}
 	.u-checkbox-label {
 	    color: $checkbox-warning-bg;
-	    
+
 	}
 }
 // Modifier: `checkbox-danger`
@@ -115,10 +114,10 @@
 		    box-shadow: inset 0 0 0 10px $checkbox-danger-bg;
 		    border-color:$checkbox-danger-bg;
 		}
-	} 
+	}
 	.u-checkbox-label {
 	    color: $checkbox-danger-bg;
-	    
+
 	}
 }
 // Modifier: `checkbox-warning`
@@ -132,10 +131,10 @@
 		    box-shadow: inset 0 0 0 10px $checkbox-dark-bg;
 		    border-color:$checkbox-dark-bg;
 		}
-	} 
+	}
 	.u-checkbox-label {
 	    color: $checkbox-dark-bg;
-	    
+
 	}
 }
 // Modifier: `checkbox-info`
@@ -149,11 +148,9 @@
 		    box-shadow: inset 0 0 0 10px $checkbox-info-bg;
 		    border-color:$checkbox-info-bg;
 		}
-	} 
+	}
 	.u-checkbox-label {
 	    color: $checkbox-info-bg;
-	    
+
 	}
 }
-
-
