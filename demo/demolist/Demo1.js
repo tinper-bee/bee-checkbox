@@ -8,14 +8,13 @@ class Demo1 extends Component {
 		this.onChange = this.onChange.bind(this);
 	}
 	onChange() {
-		debugger;
 		console.log("hook");
 	}
 	render () {
 		return (
 			<div className="demo-checkbox">
 				<Checkbox disabled> checkbox</Checkbox>
-				<Checkbox ref="test" checked onChange={this.onChange}> checkbox</Checkbox>
+				<Checkbox ref="test" checked onHandleChange={this.onChange}> checkbox</Checkbox>
 			</div>
 		)
 	}

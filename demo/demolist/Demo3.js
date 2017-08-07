@@ -26,7 +26,7 @@ class Demo3 extends Component {
 		return (
 			<div className="demo-checkbox">
 				<button onClick={this.changeCheck.bind(this)}>change checkbox</button>
-				<Checkbox checked={this.state.checked} onChange={this.onChange}> checkbox2</Checkbox>
+				<Checkbox checked={this.state.checked} onHandleChange={this.onChange}> checkbox2</Checkbox>
 			</div>
 		)
 	}

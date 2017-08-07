@@ -1,5 +1,6 @@
 import classnames from 'classnames';
 import React, { PropTypes } from 'react';
+import {createChainedFunction} from 'tinper-bee-core';
 //import warning from 'warning';
 
 
@@ -24,19 +25,20 @@ class Checkbox extends React.Component {
 		this.state = {
 			checked : this.props.checked
 		}
+    //this.changeState = this.changeState.bind(this);
 	}
 
   componentWillReceiveProps(nextProp) {
     this.setState({checked:nextProp.checked});
   }
 
-	changeState () {
-    const {onChange} = this.props;
+	changeState() {
+    const {onHandleChange} = this.props;
 		if(this.props.disabled == false){
 			this.setState({checked:!this.state.checked});
 		}
-    if(onChange) {
-      onChange();
+    if(onHandleChange) {
+      onHandleChange();
     }
 	}
 
@@ -50,14 +52,15 @@ class Checkbox extends React.Component {
 	      children,
         checked,
         clsPrefix,
-        onChange,
+        onHandleChange,
 	      ...others
     	} = this.props;
 
-
+    
     const input = (
       	<input
         {...others}
+        onChange={this.changeState.bind(this)}
         type="checkbox"
         disabled={this.props.disabled}
         />
@@ -82,8 +85,10 @@ class Checkbox extends React.Component {
 
     let classNames = classnames(clsPrefix, classes);
 
+    console.log("render");
+
     return (
-        <label {...others} className={classNames} onClick={this.changeState.bind(this)}>
+        <label className={classNames}>
           {input}
           <label className="u-checkbox-label">{children}</label>
         </label>

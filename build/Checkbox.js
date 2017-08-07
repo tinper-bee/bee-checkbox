@@ -14,6 +14,8 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _tinperBeeCore = require('tinper-bee-core');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -55,8 +57,8 @@ var Checkbox = function (_React$Component) {
 
     _this.state = {
       checked: _this.props.checked
-    };
-    return _this;
+      //this.changeState = this.changeState.bind(this);
+    };return _this;
   }
 
   Checkbox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProp) {
@@ -64,13 +66,13 @@ var Checkbox = function (_React$Component) {
   };
 
   Checkbox.prototype.changeState = function changeState() {
-    var onChange = this.props.onChange;
+    var onHandleChange = this.props.onHandleChange;
 
     if (this.props.disabled == false) {
       this.setState({ checked: !this.state.checked });
     }
-    if (onChange) {
-      onChange();
+    if (onHandleChange) {
+      onHandleChange();
     }
   };
 
@@ -83,10 +85,11 @@ var Checkbox = function (_React$Component) {
         children = _props.children,
         checked = _props.checked,
         clsPrefix = _props.clsPrefix,
-        onChange = _props.onChange,
-        others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children', 'checked', 'clsPrefix', 'onChange']);
+        onHandleChange = _props.onHandleChange,
+        others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'children', 'checked', 'clsPrefix', 'onHandleChange']);
 
     var input = _react2["default"].createElement('input', _extends({}, others, {
+      onChange: this.changeState.bind(this),
       type: 'checkbox',
       disabled: this.props.disabled
     }));
@@ -110,9 +113,11 @@ var Checkbox = function (_React$Component) {
 
     var classNames = (0, _classnames2["default"])(clsPrefix, classes);
 
+    console.log("render");
+
     return _react2["default"].createElement(
       'label',
-      _extends({}, others, { className: classNames, onClick: this.changeState.bind(this) }),
+      { className: classNames },
       input,
       _react2["default"].createElement(
         'label',
