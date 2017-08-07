@@ -66,13 +66,13 @@ var Checkbox = function (_React$Component) {
   };
 
   Checkbox.prototype.changeState = function changeState() {
-    var onHandleChange = this.props.onHandleChange;
+    var onChange = this.props.onChange;
 
     if (this.props.disabled == false) {
       this.setState({ checked: !this.state.checked });
     }
-    if (onHandleChange) {
-      onHandleChange();
+    if (onChange instanceof Function) {
+      onChange(!this.state.checked);
     }
   };
 
@@ -98,10 +98,6 @@ var Checkbox = function (_React$Component) {
       'is-checked': this.state.checked,
       disabled: disabled
     };
-
-    if (colors) {
-      classes[clsPrefix + '-' + colors] = true;
-    }
 
     if (colors) {
       classes[clsPrefix + '-' + colors] = true;

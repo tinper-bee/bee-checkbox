@@ -9,7 +9,7 @@ const propTypes = {
   colors: PropTypes.oneOf(['', 'dark', 'success', 'info', 'warning', 'danger','primary']),
 
   disabled: PropTypes.bool,
-  
+
 };
 
 const defaultProps = {
@@ -31,16 +31,16 @@ class Checkbox extends React.Component {
   componentWillReceiveProps(nextProp) {
     this.setState({checked:nextProp.checked});
   }
-
-	changeState() {
-    const {onHandleChange} = this.props;
+ 
+changeState () {
+    const {onChange} = this.props;
 		if(this.props.disabled == false){
 			this.setState({checked:!this.state.checked});
 		}
-    if(onHandleChange) {
-      onHandleChange();
+    if(onChange instanceof Function) {
+      onChange(!this.state.checked);
     }
-	}
+}
 
 
   	render() {
@@ -70,10 +70,6 @@ class Checkbox extends React.Component {
     	'is-checked':this.state.checked,
     	disabled
     };
-
-    if (colors) {
-        classes[`${clsPrefix}-${colors}`] = true;
-    }
 
     if (colors) {
         classes[`${clsPrefix}-${colors}`] = true;
