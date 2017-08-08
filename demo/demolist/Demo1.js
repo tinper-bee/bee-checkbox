@@ -1,4 +1,5 @@
-/**
+
+0./**
  * @title Checkbox
  * @description `checked` 参数设置是否选中，`disabled`设置是否可用。
  */
