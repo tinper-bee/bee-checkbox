@@ -15,22 +15,24 @@ const propTypes = {
 const defaultProps = {
     disabled: false,
     colors: 'primary',
-    clsPrefix: 'u-checkbox'
+    clsPrefix: 'u-checkbox',
+    defaultChecked: false
 };
 const clsPrefix = 'u-checkbox';
 class Checkbox extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            checked: !!this.props.checked
+            checked: 'checked' in props ? props.checked : props.defaultChecked
         }
         this.changeState = this.changeState.bind(this);
     }
 
     componentWillReceiveProps(nextProp) {
         if(nextProp.hasOwnProperty('checked')){
-            this.setState({checked: nextProp.checked});
-            console.log(11);
+            this.setState({
+                checked: nextProp.checked
+            });
         }
     }
 
@@ -58,7 +60,6 @@ class Checkbox extends React.Component {
             children,
             checked,
             clsPrefix,
-            onHandleChange,
             onChange,
             ...others
         } = this.props;
@@ -88,7 +89,6 @@ class Checkbox extends React.Component {
 
         let classNames = classnames(clsPrefix, classes);
 
-        console.log(this.state.checked);
 
         return (
             <label className={classNames}>
