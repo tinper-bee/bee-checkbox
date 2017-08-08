@@ -38,9 +38,12 @@ import "./node_modules/build/bee-checkbox.css"
 ## API
 |参数|说明|类型|默认值|
 |---|----|---|------|
+|className|类名|string|-|
 |color|one of: `primary` `success` `info` `error`  `warning` `dark`|string|''|
 |disabled|是否可用|bool|false|
-
+|onChange|监听改变|function|-|
+|defaultChecked|默认是否选中|bool|false|
+|checked|是否选中|bool|-|
 
 #### 开发调试
 
