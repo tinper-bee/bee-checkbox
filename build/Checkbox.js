@@ -122,11 +122,12 @@ var Checkbox = function (_React$Component) {
 
         return _react2["default"].createElement(
             'label',
-            { className: classNames },
+            { className: (0, _classnames2["default"])(classNames, className) },
             input,
+            _react2["default"].createElement('label', { className: 'u-checkbox-label' }),
             _react2["default"].createElement(
-                'label',
-                { className: 'u-checkbox-label' },
+                'span',
+                null,
                 children
             )
         );

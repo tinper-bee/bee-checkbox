@@ -91,9 +91,10 @@ class Checkbox extends React.Component {
 
 
         return (
-            <label className={classNames}>
+            <label className={classnames(classNames, className)}>
                 {input}
-                <label className="u-checkbox-label">{children}</label>
+                <label className="u-checkbox-label"></label>
+                <span>{children}</span>
             </label>
         );
     }

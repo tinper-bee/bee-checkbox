@@ -14,7 +14,7 @@ class Demo1 extends Component {
 	render () {
 		return (
 			<div className="demo-checkbox">
-				<Checkbox disabled> checkbox</Checkbox>
+				<Checkbox disabled className="test"> checkbox</Checkbox>
 				<Checkbox ref="test" checked onHandleChange={this.onChange}> checkbox</Checkbox>
 			</div>
 		)
