@@ -57,6 +57,7 @@ class Checkbox extends React.Component {
             colors,
             size,
             className,
+            indeterminate,
             children,
             checked,
             clsPrefix,
@@ -85,6 +86,14 @@ class Checkbox extends React.Component {
 
         if (size) {
             classes[`${clsPrefix}-${size}`] = true;
+        }
+
+        if (size) {
+            classes[`${clsPrefix}-${size}`] = true;
+        }
+
+        if (!checked && indeterminate) {
+            classes[`${clsPrefix}-indeterminate`] = true;
         }
 
         let classNames = classnames(clsPrefix, classes);

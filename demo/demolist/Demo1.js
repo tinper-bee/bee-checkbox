@@ -15,7 +15,8 @@ class Demo1 extends Component {
 		return (
 			<div className="demo-checkbox">
 				<Checkbox disabled className="test"> checkbox</Checkbox>
-				<Checkbox ref="test" checked onHandleChange={this.onChange}> checkbox</Checkbox>
+				<Checkbox ref="test" checked onHandleChange={this.onChange}> 全选</Checkbox>
+				<Checkbox ref="test" indeterminate onHandleChange={this.onChange}> 半选</Checkbox>
 			</div>
 		)
 	}

@@ -44,6 +44,8 @@ import "./node_modules/build/bee-checkbox.css"
 |onChange|监听改变|function|-|
 |defaultChecked|默认是否选中|bool|false|
 |checked|是否选中|bool|-|
+|indeterminate|部分选中|bool|-|
+
 
 #### 开发调试
 

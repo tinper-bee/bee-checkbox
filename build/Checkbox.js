@@ -93,11 +93,12 @@ var Checkbox = function (_React$Component) {
             colors = _props2.colors,
             size = _props2.size,
             className = _props2.className,
+            indeterminate = _props2.indeterminate,
             children = _props2.children,
             checked = _props2.checked,
             clsPrefix = _props2.clsPrefix,
             onChange = _props2.onChange,
-            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'children', 'checked', 'clsPrefix', 'onChange']);
+            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
 
         var input = _react2["default"].createElement('input', _extends({}, others, {
             onChange: this.changeState,
@@ -116,6 +117,14 @@ var Checkbox = function (_React$Component) {
 
         if (size) {
             classes[clsPrefix + '-' + size] = true;
+        }
+
+        if (size) {
+            classes[clsPrefix + '-' + size] = true;
+        }
+
+        if (!checked && indeterminate) {
+            classes[clsPrefix + '-indeterminate'] = true;
         }
 
         var classNames = (0, _classnames2["default"])(clsPrefix, classes);
