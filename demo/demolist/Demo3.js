@@ -2,7 +2,11 @@
  * @title Checkbox
  * @description `checked` 参数设置是否选中，`disabled`设置是否可用。
  */
-class Demo3 extends Component {
+
+import React, { Component } from 'react';
+import Checkbox from '../../src';
+
+export default class Demo3 extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {

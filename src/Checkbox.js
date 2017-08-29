@@ -50,7 +50,6 @@ class Checkbox extends React.Component {
         }
     }
 
-
     render() {
         const {
             disabled,
@@ -82,10 +81,6 @@ class Checkbox extends React.Component {
 
         if (colors) {
             classes[`${clsPrefix}-${colors}`] = true;
-        }
-
-        if (size) {
-            classes[`${clsPrefix}-${size}`] = true;
         }
 
         if (size) {

@@ -1,9 +1,13 @@
 
-0./**
+/**
  * @title Checkbox
  * @description `checked` 参数设置是否选中，`disabled`设置是否可用。
  */
-class Demo1 extends Component {
+
+import React, { Component } from 'react';
+import Checkbox from '../../src';
+
+export default class Demo1 extends Component {
 	constructor(props) {
 		super(props);
 		this.onChange = this.onChange.bind(this);
