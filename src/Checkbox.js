@@ -37,7 +37,7 @@ class Checkbox extends React.Component {
     }
 
     changeState() {
-        const {onHandleChange, disabled} = this.props;
+        const {onChange, disabled} = this.props;
         let { checked } = this.state;
         if (disabled == false) {
             this.setState({
@@ -45,8 +45,8 @@ class Checkbox extends React.Component {
             });
         }
 
-        if (onHandleChange instanceof Function) {
-            onHandleChange(!this.state.checked);
+        if (onChange instanceof Function) {
+            onChange(!this.state.checked);
         }
     }
 
@@ -60,7 +60,7 @@ class Checkbox extends React.Component {
             children,
             checked,
             clsPrefix,
-            onHandleChange,
+            onChange,
             ...others
         } = this.props;
 

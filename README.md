@@ -41,7 +41,7 @@ import "./node_modules/build/bee-checkbox.css"
 |className|类名|string|-|
 |color|one of: `primary` `success` `info` `error`  `warning` `dark`|string|''|
 |disabled|是否可用|bool|false|
-|onHandleChange|监听改变|function|-|
+|onChange|监听改变|function|-|
 |defaultChecked|默认是否选中|bool|false|
 |checked|是否选中|bool|-|
 |indeterminate|部分选中|bool|-|

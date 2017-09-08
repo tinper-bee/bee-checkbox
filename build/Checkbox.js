@@ -72,7 +72,7 @@ var Checkbox = function (_React$Component) {
 
     Checkbox.prototype.changeState = function changeState() {
         var _props = this.props,
-            onHandleChange = _props.onHandleChange,
+            onChange = _props.onChange,
             disabled = _props.disabled;
         var checked = this.state.checked;
 
@@ -82,8 +82,8 @@ var Checkbox = function (_React$Component) {
             });
         }
 
-        if (onHandleChange instanceof Function) {
-            onHandleChange(!this.state.checked);
+        if (onChange instanceof Function) {
+            onChange(!this.state.checked);
         }
     };
 
@@ -97,8 +97,8 @@ var Checkbox = function (_React$Component) {
             children = _props2.children,
             checked = _props2.checked,
             clsPrefix = _props2.clsPrefix,
-            onHandleChange = _props2.onHandleChange,
-            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onHandleChange']);
+            onChange = _props2.onChange,
+            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
 
         var input = _react2["default"].createElement('input', _extends({}, others, {
             onClick: this.changeState,
