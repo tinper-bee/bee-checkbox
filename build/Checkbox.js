@@ -72,7 +72,7 @@ var Checkbox = function (_React$Component) {
 
     Checkbox.prototype.changeState = function changeState() {
         var _props = this.props,
-            onChange = _props.onChange,
+            onHandleChange = _props.onHandleChange,
             disabled = _props.disabled;
         var checked = this.state.checked;
 
@@ -82,8 +82,8 @@ var Checkbox = function (_React$Component) {
             });
         }
 
-        if (onChange instanceof Function) {
-            onChange(!this.state.checked);
+        if (onHandleChange instanceof Function) {
+            onHandleChange(!this.state.checked);
         }
     };
 
@@ -97,11 +97,11 @@ var Checkbox = function (_React$Component) {
             children = _props2.children,
             checked = _props2.checked,
             clsPrefix = _props2.clsPrefix,
-            onChange = _props2.onChange,
-            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
+            onHandleChange = _props2.onHandleChange,
+            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onHandleChange']);
 
         var input = _react2["default"].createElement('input', _extends({}, others, {
-            onChange: this.changeState,
+            onClick: this.changeState,
             type: 'checkbox',
             disabled: this.props.disabled
         }));
@@ -113,10 +113,6 @@ var Checkbox = function (_React$Component) {
 
         if (colors) {
             classes[clsPrefix + '-' + colors] = true;
-        }
-
-        if (size) {
-            classes[clsPrefix + '-' + size] = true;
         }
 
         if (size) {
