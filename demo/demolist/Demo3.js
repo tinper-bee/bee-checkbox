@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import Checkbox from '../../src';
 
-export default class Demo3 extends Component {
+class Demo3 extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -36,3 +36,4 @@ export default class Demo3 extends Component {
 		)
 	}
 }
+export default Demo3;

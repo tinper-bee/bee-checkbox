@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import Checkbox from '../../src';
 
-export default class Demo2 extends Component {
+class Demo2 extends Component {
 	render(){
 		return (
 			<div className="demo-checkbox">
@@ -16,3 +16,4 @@ export default class Demo2 extends Component {
 		)
 	}
 }
+export default Demo2;
