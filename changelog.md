@@ -1,5 +1,15 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2017-12-27)
 
-|时间|说明|修复版本|
-|---|----|---|
-|2017-8-29|1.判断classname代码重复问题 2.修改示例|0.2.2|
-|2017-9-6|input 上的onChange事件改成click|0.2.4|
+
+### Bug Fixes
+
+* demo展示bug ([4af7c2e](https://github.com/tinper-bee/checkbox/commit/4af7c2e))
+
+
+### Features
+
+* **checkbox.scss:** 新增checkbox在disabled状态时的鼠标样式 ([89f8403](https://github.com/tinper-bee/checkbox/commit/89f8403))
+
+
+
