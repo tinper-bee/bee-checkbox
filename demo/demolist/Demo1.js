@@ -23,9 +23,9 @@ import Checkbox from '../../src';
 	render () {
 		return (
 			<div className="demo-checkbox">
-				<Checkbox disabled className="test"> checkbox</Checkbox>
-				<Checkbox ref="test" checked={this.state.checkedFlag} onChange={this.onChange}> 全选</Checkbox>
-				<Checkbox ref="test" indeterminate onChange={this.onChange}> 半选</Checkbox>
+				<Checkbox disabled className="test">checkbox</Checkbox>
+				<Checkbox ref="test" checked={this.state.checkedFlag} onChange={this.onChange}>全选</Checkbox>
+				<Checkbox ref="test" indeterminate onChange={this.onChange}>半选</Checkbox>
 			</div>
 		)
 	}
