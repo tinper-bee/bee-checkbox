@@ -76,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(67);var Demo3 = __webpack_require__(68);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " Checkbox", "code": "\n/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\n class Demo1 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\tcheckedFlag:false\n\t\t}\n\t\tthis.onChange = this.onChange.bind(this);\n\t}\n\tonChange(e) {\n\t\tconsole.log(e);\n\t\tthis.setState({checkedFlag:e});\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox disabled className=\"test\">checkbox</Checkbox>\n\t\t\t\t<Checkbox ref=\"test\" checked={this.state.checkedFlag} onChange={this.onChange}>全选</Checkbox>\n\t\t\t\t<Checkbox ref=\"test\" indeterminate onChange={this.onChange}>半选</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 多颜色`Checkbox`", "code": "/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\">checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\">checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " `colors`参数控制背景色", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }, { "example": _react2['default'].createElement(Demo3, null), "title": " Checkbox", "code": "/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo3 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\tchecked: false,\n\t\t\tchecked2: false,\n\t\t\tcheckedAll: false,\n\t\t}\n\t\tthis.onChange = this.onChange.bind(this);\n\t\tthis.onCheckedAll = this.onCheckedAll.bind(this);\n\t}\n\tonChange() {\n\t\tthis.setState({checkedAll:!this.state.checkedAll})\n\t}\n\tonCheckedAll() {\n\t\tthis.setState({checkedAll:!this.state.checkedAll,checked:!this.state.checked});\n\t}\n\tchangeCheck() {\n\t\tthis.setState({checked:!this.state.checked});\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<button onClick={this.changeCheck.bind(this)}>change checkbox</button>\n\t\t\t\t <Checkbox checked={this.state.checked}>checkbox2</Checkbox>\n\t\t\t\t<Checkbox defaultChecked={this.state.checked}>checkbox2</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }];
+	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(67);var Demo3 = __webpack_require__(68);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " Checkbox", "code": "\n/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\n class Demo1 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\tcheckedFlag:false\n\t\t}\n\t\tthis.onChange = this.onChange.bind(this);\n\t}\n\tonChange(e) {\n\t\tconsole.log(e);\n\t\tthis.setState({checkedFlag:e});\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox disabled className=\"test\">checkbox</Checkbox>\n\t\t\t\t<Checkbox ref=\"test\" checked={this.state.checkedFlag} onChange={this.onChange}>全选</Checkbox>\n\t\t\t\t<Checkbox ref=\"test\" indeterminate onChange={this.onChange}>半选</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 多颜色`Checkbox`", "code": "/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\">checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\">checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " `colors`参数控制背景色", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }, { "example": _react2['default'].createElement(Demo3, null), "title": " Checkbox", "code": "/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo3 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\tchecked: false\n\t\t}\n\t}\n\tchangeCheck=()=> {\n\t\tthis.setState({checked:!this.state.checked});\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<button onClick={this.changeCheck.bind(this)}>change checkbox</button>\n\t\t\t\t <Checkbox checked={this.state.checked} onChange={this.changeCheck}>checkbox2</Checkbox>\n\t\t\t\t<Checkbox defaultChecked={this.state.checked}>checkbox2</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -6365,46 +6365,45 @@
 	        return _this;
 	    }
 	
-	    Checkbox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProp) {
-	        if (nextProp.hasOwnProperty('checked')) {
+	    Checkbox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+	        if ('checked' in nextProps) {
 	            this.setState({
-	                checked: nextProp.checked
+	                checked: nextProps.checked
 	            });
 	        }
 	    };
 	
 	    Checkbox.prototype.changeState = function changeState() {
-	        var _props = this.props,
-	            onChange = _props.onChange,
-	            disabled = _props.disabled;
-	        var checked = this.state.checked;
+	        var props = this.props;
 	
-	        if (disabled == false) {
+	        if (props.disabled) {
+	            return;
+	        }
+	        if (!('checked' in props)) {
 	            this.setState({
-	                checked: !checked
+	                checked: !this.state.checked
 	            });
 	        }
 	
-	        if (onChange instanceof Function) {
-	            onChange(!this.state.checked);
+	        if (props.onChange instanceof Function) {
+	            props.onChange(!this.state.checked);
 	        }
 	    };
 	
 	    Checkbox.prototype.render = function render() {
-	        var _props2 = this.props,
-	            disabled = _props2.disabled,
-	            colors = _props2.colors,
-	            size = _props2.size,
-	            className = _props2.className,
-	            indeterminate = _props2.indeterminate,
-	            children = _props2.children,
-	            checked = _props2.checked,
-	            clsPrefix = _props2.clsPrefix,
-	            onChange = _props2.onChange,
-	            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
+	        var _props = this.props,
+	            disabled = _props.disabled,
+	            colors = _props.colors,
+	            size = _props.size,
+	            className = _props.className,
+	            indeterminate = _props.indeterminate,
+	            children = _props.children,
+	            checked = _props.checked,
+	            clsPrefix = _props.clsPrefix,
+	            onChange = _props.onChange,
+	            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
 	
 	        var input = _react2['default'].createElement('input', _extends({}, others, {
-	            onClick: this.changeState,
 	            type: 'checkbox',
 	            disabled: this.props.disabled
 	        }));
@@ -6430,12 +6429,11 @@
 	
 	        return _react2['default'].createElement(
 	            'label',
-	            { className: (0, _classnames2['default'])(classNames, className) },
+	            { className: (0, _classnames2['default'])(classNames, className), onClick: this.changeState },
 	            input,
-	            _react2['default'].createElement('label', { className: 'u-checkbox-label' }),
 	            _react2['default'].createElement(
-	                'span',
-	                null,
+	                'label',
+	                { className: clsPrefix + '-label' },
 	                children
 	            )
 	        );
@@ -6552,27 +6550,15 @@
 	
 			var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 	
-			_this.state = {
-				checked: false,
-				checked2: false,
-				checkedAll: false
+			_this.changeCheck = function () {
+				_this.setState({ checked: !_this.state.checked });
 			};
-			_this.onChange = _this.onChange.bind(_this);
-			_this.onCheckedAll = _this.onCheckedAll.bind(_this);
+	
+			_this.state = {
+				checked: false
+			};
 			return _this;
 		}
-	
-		Demo3.prototype.onChange = function onChange() {
-			this.setState({ checkedAll: !this.state.checkedAll });
-		};
-	
-		Demo3.prototype.onCheckedAll = function onCheckedAll() {
-			this.setState({ checkedAll: !this.state.checkedAll, checked: !this.state.checked });
-		};
-	
-		Demo3.prototype.changeCheck = function changeCheck() {
-			this.setState({ checked: !this.state.checked });
-		};
 	
 		Demo3.prototype.render = function render() {
 			return _react2['default'].createElement(
@@ -6585,7 +6571,7 @@
 				),
 				_react2['default'].createElement(
 					_src2['default'],
-					{ checked: this.state.checked },
+					{ checked: this.state.checked, onChange: this.changeCheck },
 					'checkbox2'
 				),
 				_react2['default'].createElement(

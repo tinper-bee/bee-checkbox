@@ -29,25 +29,27 @@ class Checkbox extends React.Component {
         this.changeState = this.changeState.bind(this);
     }
 
-    componentWillReceiveProps(nextProp) {
-        if(nextProp.hasOwnProperty('checked')){
+    componentWillReceiveProps(nextProps) {
+        if ('checked' in nextProps) {
             this.setState({
-                checked: nextProp.checked
+              checked: nextProps.checked,
             });
         }
     }
 
     changeState() {
-        const {onChange, disabled} = this.props;
-        let { checked } = this.state;
-        if (disabled == false) {
+        const { props } = this;
+        if (props.disabled) {
+            return;
+        }
+        if (!('checked' in props)) {
             this.setState({
-                checked: !checked
+                checked: !this.state.checked,
             });
         }
 
-        if (onChange instanceof Function) {
-            onChange(!this.state.checked);
+        if (props.onChange instanceof Function) {
+            props.onChange(!this.state.checked);
         }
     }
 
@@ -69,7 +71,6 @@ class Checkbox extends React.Component {
         const input = (
             <input
                 {...others}
-                onClick={this.changeState}
                 type="checkbox"
                 disabled={this.props.disabled}
             />
@@ -96,10 +97,9 @@ class Checkbox extends React.Component {
 
 
         return (
-            <label className={classnames(classNames, className)}>
+            <label className={classnames(classNames, className)} onClick={this.changeState}>
                 {input}
-                <label className="u-checkbox-label"></label>
-                <span>{children}</span>
+                <label className={clsPrefix+'-label'}>{children}</label>
             </label>
         );
     }
