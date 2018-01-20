@@ -66,46 +66,45 @@ var Checkbox = function (_React$Component) {
         return _this;
     }
 
-    Checkbox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProp) {
-        if (nextProp.hasOwnProperty('checked')) {
+    Checkbox.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+        if ('checked' in nextProps) {
             this.setState({
-                checked: nextProp.checked
+                checked: nextProps.checked
             });
         }
     };
 
     Checkbox.prototype.changeState = function changeState() {
-        var _props = this.props,
-            onChange = _props.onChange,
-            disabled = _props.disabled;
-        var checked = this.state.checked;
+        var props = this.props;
 
-        if (disabled == false) {
+        if (props.disabled) {
+            return;
+        }
+        if (!('checked' in props)) {
             this.setState({
-                checked: !checked
+                checked: !this.state.checked
             });
         }
 
-        if (onChange instanceof Function) {
-            onChange(!this.state.checked);
+        if (props.onChange instanceof Function) {
+            props.onChange(!this.state.checked);
         }
     };
 
     Checkbox.prototype.render = function render() {
-        var _props2 = this.props,
-            disabled = _props2.disabled,
-            colors = _props2.colors,
-            size = _props2.size,
-            className = _props2.className,
-            indeterminate = _props2.indeterminate,
-            children = _props2.children,
-            checked = _props2.checked,
-            clsPrefix = _props2.clsPrefix,
-            onChange = _props2.onChange,
-            others = _objectWithoutProperties(_props2, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
+        var _props = this.props,
+            disabled = _props.disabled,
+            colors = _props.colors,
+            size = _props.size,
+            className = _props.className,
+            indeterminate = _props.indeterminate,
+            children = _props.children,
+            checked = _props.checked,
+            clsPrefix = _props.clsPrefix,
+            onChange = _props.onChange,
+            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
 
         var input = _react2["default"].createElement('input', _extends({}, others, {
-            onClick: this.changeState,
             type: 'checkbox',
             disabled: this.props.disabled
         }));
@@ -131,12 +130,11 @@ var Checkbox = function (_React$Component) {
 
         return _react2["default"].createElement(
             'label',
-            { className: (0, _classnames2["default"])(classNames, className) },
+            { className: (0, _classnames2["default"])(classNames, className), onClick: this.changeState },
             input,
-            _react2["default"].createElement('label', { className: 'u-checkbox-label' }),
             _react2["default"].createElement(
-                'span',
-                null,
+                'label',
+                { className: clsPrefix + '-label' },
                 children
             )
         );
