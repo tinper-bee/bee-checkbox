@@ -6177,7 +6177,6 @@ input.u-button[type="submit"] {
   .u-checkbox .u-checkbox-label {
     cursor: pointer;
     display: inline-block;
-    position: relative;
     padding-left: 25px; }
     .u-checkbox .u-checkbox-label:before {
       border-radius: 3px;
@@ -6190,7 +6189,7 @@ input.u-button[type="submit"] {
       width: 18px;
       height: 18px;
       left: 0;
-      bottom: 4px;
+      top: 4px;
       text-align: center;
       position: absolute; }
     .u-checkbox .u-checkbox-label:after {
@@ -6200,7 +6199,7 @@ input.u-button[type="submit"] {
       width: 18px;
       height: 18px;
       left: 0;
-      bottom: 4px;
+      top: 4px;
       text-align: center;
       position: absolute; }
 

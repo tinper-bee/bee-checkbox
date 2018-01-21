@@ -17,7 +17,7 @@ const defaultProps = {
     disabled: false,
     colors: 'primary',
     clsPrefix: 'u-checkbox',
-    defaultChecked: false
+    defaultChecked: false,
 };
 const clsPrefix = 'u-checkbox';
 class Checkbox extends React.Component {
