@@ -26,7 +26,7 @@ class Checkbox extends React.Component {
         this.state = {
             checked: 'checked' in props ? props.checked : props.defaultChecked
         }
-        this.changeState = this.changeState.bind(this);
+        this.doubleClickFlag = null;
     }
 
     componentWillReceiveProps(nextProps) {
@@ -37,20 +37,32 @@ class Checkbox extends React.Component {
         }
     }
 
-    changeState() {
+    changeState = () => {
         const { props } = this;
-        if (props.disabled) {
-            return;
-        }
-        if (!('checked' in props)) {
-            this.setState({
-                checked: !this.state.checked,
-            });
-        }
+        clearTimeout(this.doubleClickFlag);
 
-        if (props.onChange instanceof Function) {
-            props.onChange(!this.state.checked);
-        }
+        //执行延时
+        this.doubleClickFlag = setTimeout(() => {
+            //do function在此处写单击事件要执行的代码
+            if (props.disabled) {
+                return;
+            }
+            if (!('checked' in props)) {
+                this.setState({
+                    checked: !this.state.checked,
+                });
+            }
+
+            if (props.onChange instanceof Function) {
+                props.onChange(!this.state.checked);
+            }
+        },300);
+    }
+
+    handledbClick = () => {
+        const { onDoubleClick } = this.props;
+        clearTimeout(this.doubleClickFlag);
+        onDoubleClick && onDoubleClick(this.state.checked);
     }
 
     render() {
@@ -63,6 +75,7 @@ class Checkbox extends React.Component {
             children,
             checked,
             clsPrefix,
+            onDoubleClick,
             onChange,
             ...others
         } = this.props;
@@ -97,7 +110,10 @@ class Checkbox extends React.Component {
 
 
         return (
-            <label className={classnames(classNames, className)} onClick={this.changeState}>
+            <label
+                className={classnames(classNames, className)}
+                onDoubleClick={this.handledbClick}
+                onClick={this.changeState}>
                 {input}
                 <label className={clsPrefix+'-label'}>{children}</label>
             </label>

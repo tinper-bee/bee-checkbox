@@ -59,10 +59,12 @@ var Checkbox = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
 
+        _initialiseProps.call(_this);
+
         _this.state = {
             checked: 'checked' in props ? props.checked : props.defaultChecked
         };
-        _this.changeState = _this.changeState.bind(_this);
+        _this.doubleClickFlag = null;
         return _this;
     }
 
@@ -71,23 +73,6 @@ var Checkbox = function (_React$Component) {
             this.setState({
                 checked: nextProps.checked
             });
-        }
-    };
-
-    Checkbox.prototype.changeState = function changeState() {
-        var props = this.props;
-
-        if (props.disabled) {
-            return;
-        }
-        if (!('checked' in props)) {
-            this.setState({
-                checked: !this.state.checked
-            });
-        }
-
-        if (props.onChange instanceof Function) {
-            props.onChange(!this.state.checked);
         }
     };
 
@@ -101,8 +86,9 @@ var Checkbox = function (_React$Component) {
             children = _props.children,
             checked = _props.checked,
             clsPrefix = _props.clsPrefix,
+            onDoubleClick = _props.onDoubleClick,
             onChange = _props.onChange,
-            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onChange']);
+            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onDoubleClick', 'onChange']);
 
         var input = _react2["default"].createElement('input', _extends({}, others, {
             type: 'checkbox',
@@ -130,7 +116,10 @@ var Checkbox = function (_React$Component) {
 
         return _react2["default"].createElement(
             'label',
-            { className: (0, _classnames2["default"])(classNames, className), onClick: this.changeState },
+            {
+                className: (0, _classnames2["default"])(classNames, className),
+                onDoubleClick: this.handledbClick,
+                onClick: this.changeState },
             input,
             _react2["default"].createElement(
                 'label',
@@ -142,6 +131,40 @@ var Checkbox = function (_React$Component) {
 
     return Checkbox;
 }(_react2["default"].Component);
+
+var _initialiseProps = function _initialiseProps() {
+    var _this2 = this;
+
+    this.changeState = function () {
+        var props = _this2.props;
+
+        clearTimeout(_this2.doubleClickFlag);
+
+        //执行延时
+        _this2.doubleClickFlag = setTimeout(function () {
+            //do function在此处写单击事件要执行的代码
+            if (props.disabled) {
+                return;
+            }
+            if (!('checked' in props)) {
+                _this2.setState({
+                    checked: !_this2.state.checked
+                });
+            }
+
+            if (props.onChange instanceof Function) {
+                props.onChange(!_this2.state.checked);
+            }
+        }, 300);
+    };
+
+    this.handledbClick = function () {
+        var onDoubleClick = _this2.props.onDoubleClick;
+
+        clearTimeout(_this2.doubleClickFlag);
+        onDoubleClick && onDoubleClick(_this2.state.checked);
+    };
+};
 
 Checkbox.propTypes = propTypes;
 Checkbox.defaultProps = defaultProps;
