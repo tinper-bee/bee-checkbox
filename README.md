@@ -45,7 +45,8 @@ import "./node_modules/build/bee-checkbox.css"
 |defaultChecked|默认是否选中|bool|false|
 |checked|是否选中|bool|-|
 |indeterminate|部分选中|bool|-|
-
+|onDoubleClick|双击事件|function|function(checked, event){}|
+|onClick|单击事件|function|function(event){}|
 
 #### 开发调试
 

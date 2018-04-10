@@ -83,12 +83,13 @@ var Checkbox = function (_React$Component) {
             size = _props.size,
             className = _props.className,
             indeterminate = _props.indeterminate,
+            onClick = _props.onClick,
             children = _props.children,
             checked = _props.checked,
             clsPrefix = _props.clsPrefix,
             onDoubleClick = _props.onDoubleClick,
             onChange = _props.onChange,
-            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'children', 'checked', 'clsPrefix', 'onDoubleClick', 'onChange']);
+            others = _objectWithoutProperties(_props, ['disabled', 'colors', 'size', 'className', 'indeterminate', 'onClick', 'children', 'checked', 'clsPrefix', 'onDoubleClick', 'onChange']);
 
         var input = _react2["default"].createElement('input', _extends({}, others, {
             type: 'checkbox',
@@ -135,11 +136,11 @@ var Checkbox = function (_React$Component) {
 var _initialiseProps = function _initialiseProps() {
     var _this2 = this;
 
-    this.changeState = function () {
+    this.changeState = function (e) {
         var props = _this2.props;
 
         clearTimeout(_this2.doubleClickFlag);
-
+        props.onClick(e);
         //执行延时
         _this2.doubleClickFlag = setTimeout(function () {
             //do function在此处写单击事件要执行的代码
@@ -158,11 +159,11 @@ var _initialiseProps = function _initialiseProps() {
         }, 300);
     };
 
-    this.handledbClick = function () {
+    this.handledbClick = function (e) {
         var onDoubleClick = _this2.props.onDoubleClick;
 
         clearTimeout(_this2.doubleClickFlag);
-        onDoubleClick && onDoubleClick(_this2.state.checked);
+        onDoubleClick && onDoubleClick(_this2.state.checked, e);
     };
 };
 

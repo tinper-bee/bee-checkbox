@@ -37,10 +37,10 @@ class Checkbox extends React.Component {
         }
     }
 
-    changeState = () => {
+    changeState = (e) => {
         const { props } = this;
         clearTimeout(this.doubleClickFlag);
-
+        props.onClick(e);
         //执行延时
         this.doubleClickFlag = setTimeout(() => {
             //do function在此处写单击事件要执行的代码
@@ -59,10 +59,10 @@ class Checkbox extends React.Component {
         },300);
     }
 
-    handledbClick = () => {
+    handledbClick = (e) => {
         const { onDoubleClick } = this.props;
         clearTimeout(this.doubleClickFlag);
-        onDoubleClick && onDoubleClick(this.state.checked);
+        onDoubleClick && onDoubleClick(this.state.checked, e);
     }
 
     render() {
@@ -72,6 +72,7 @@ class Checkbox extends React.Component {
             size,
             className,
             indeterminate,
+            onClick,
             children,
             checked,
             clsPrefix,
