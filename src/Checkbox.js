@@ -18,6 +18,7 @@ const defaultProps = {
     colors: 'primary',
     clsPrefix: 'u-checkbox',
     defaultChecked: false,
+    onClick: function () {}
 };
 const clsPrefix = 'u-checkbox';
 class Checkbox extends React.Component {
@@ -40,7 +41,9 @@ class Checkbox extends React.Component {
     changeState = (e) => {
         const { props } = this;
         clearTimeout(this.doubleClickFlag);
-        props.onClick(e);
+        if(props.onClick instanceof Function){
+            props.onClick(e);
+        }
         //执行延时
         this.doubleClickFlag = setTimeout(() => {
             //do function在此处写单击事件要执行的代码

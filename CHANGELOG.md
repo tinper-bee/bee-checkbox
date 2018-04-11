@@ -1,3 +1,8 @@
+<a name="1.0.8"></a>
+## [1.0.8](https://github.com/tinper-bee/checkbox/compare/v1.0.7...v1.0.8) (2018-04-11)
+
+
+
 <a name="1.0.7"></a>
 ## [1.0.7](https://github.com/tinper-bee/checkbox/compare/v1.0.6...v1.0.7) (2018-04-10)
 
@@ -9,7 +14,12 @@
 
 
 <a name="1.0.5"></a>
-## [1.0.5](https://github.com/tinper-bee/checkbox/compare/v1.0.3...v1.0.5) (2018-01-21)
+## [1.0.5](https://github.com/tinper-bee/checkbox/compare/1.0.4...v1.0.5) (2018-01-21)
+
+
+
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/tinper-bee/checkbox/compare/v1.0.3...1.0.4) (2018-01-20)
 
 
 
