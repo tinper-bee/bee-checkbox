@@ -40,6 +40,7 @@ class Checkbox extends React.Component {
 
     changeState = (e) => {
         const { props } = this;
+        const { checked } = this.state;
         clearTimeout(this.doubleClickFlag);
         if(props.onClick instanceof Function){
             props.onClick(e);
@@ -52,12 +53,12 @@ class Checkbox extends React.Component {
             }
             if (!('checked' in props)) {
                 this.setState({
-                    checked: !this.state.checked,
+                    checked: !checked,
                 });
             }
 
             if (props.onChange instanceof Function) {
-                props.onChange(!this.state.checked);
+                props.onChange(!checked);
             }
         },300);
     }

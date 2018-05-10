@@ -139,6 +139,7 @@ var _initialiseProps = function _initialiseProps() {
 
     this.changeState = function (e) {
         var props = _this2.props;
+        var checked = _this2.state.checked;
 
         clearTimeout(_this2.doubleClickFlag);
         if (props.onClick instanceof Function) {
@@ -152,12 +153,12 @@ var _initialiseProps = function _initialiseProps() {
             }
             if (!('checked' in props)) {
                 _this2.setState({
-                    checked: !_this2.state.checked
+                    checked: !checked
                 });
             }
 
             if (props.onChange instanceof Function) {
-                props.onChange(!_this2.state.checked);
+                props.onChange(!checked);
             }
         }, 300);
     };
