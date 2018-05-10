@@ -1,3 +1,13 @@
+<a name="1.0.9"></a>
+## [1.0.9](https://github.com/tinper-bee/checkbox/compare/v1.0.8...v1.0.9) (2018-05-10)
+
+
+### Bug Fixes
+
+* bee-checkbox ([e776b8a](https://github.com/tinper-bee/checkbox/commit/e776b8a))
+
+
+
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/tinper-bee/checkbox/compare/v1.0.7...v1.0.8) (2018-04-11)
 
@@ -14,12 +24,7 @@
 
 
 <a name="1.0.5"></a>
-## [1.0.5](https://github.com/tinper-bee/checkbox/compare/1.0.4...v1.0.5) (2018-01-21)
-
-
-
-<a name="1.0.4"></a>
-## [1.0.4](https://github.com/tinper-bee/checkbox/compare/v1.0.3...1.0.4) (2018-01-20)
+## [1.0.5](https://github.com/tinper-bee/checkbox/compare/v1.0.3...v1.0.5) (2018-01-21)
 
 
 
