@@ -6455,22 +6455,30 @@
 	        if (props.onClick instanceof Function) {
 	            props.onClick(e);
 	        }
+	        if (props.onDoubleClick instanceof Function) {
+	            _this2.doubleClickFlag = setTimeout(function () {
+	                //do function在此处写单击事件要执行的代码
+	                _this2.change(props);
+	            }, 300);
+	        } else {
+	            _this2.change(props);
+	        }
 	        //执行延时
-	        _this2.doubleClickFlag = setTimeout(function () {
-	            //do function在此处写单击事件要执行的代码
-	            if (props.disabled) {
-	                return;
-	            }
-	            if (!('checked' in props)) {
-	                _this2.setState({
-	                    checked: !_this2.state.checked
-	                });
-	            }
+	    };
 	
-	            if (props.onChange instanceof Function) {
-	                props.onChange(!_this2.state.checked);
-	            }
-	        }, 300);
+	    this.change = function (props) {
+	        if (props.disabled) {
+	            return;
+	        }
+	        if (!('checked' in props)) {
+	            _this2.setState({
+	                checked: !_this2.state.checked
+	            });
+	        }
+	
+	        if (props.onChange instanceof Function) {
+	            props.onChange(!_this2.state.checked);
+	        }
 	    };
 	
 	    this.handledbClick = function (e) {
