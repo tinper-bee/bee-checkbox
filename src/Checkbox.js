@@ -38,6 +38,7 @@ class Checkbox extends React.Component {
 
     changeState = (e) => {
         const { props } = this;
+        const { checked } = this.state;
         clearTimeout(this.doubleClickFlag);
         if(props.onClick instanceof Function){
             props.onClick(e);
@@ -45,27 +46,26 @@ class Checkbox extends React.Component {
         if(props.onDoubleClick instanceof Function){
             this.doubleClickFlag = setTimeout(() => {
                 //do function在此处写单击事件要执行的代码
-                this.change(props)
+                this.change(props, checked)
             },300);
         }else{
-            this.change(props)
+            this.change(props, checked)
         }
         //执行延时
-
     }
 
-    change = (props) => {
+    change = (props, checked) => {
         if (props.disabled) {
             return;
         }
         if (!('checked' in props)) {
             this.setState({
-                checked: !this.state.checked,
+                checked: !checked,
             });
         }
 
         if (props.onChange instanceof Function) {
-            props.onChange(!this.state.checked);
+            props.onChange(!checked);
         }
     }
 

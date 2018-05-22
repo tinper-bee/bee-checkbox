@@ -18,8 +18,6 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _tinperBeeCore = require('tinper-bee-core');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -31,9 +29,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
-
-//import warning from 'warning';
-
 
 var propTypes = {
 
@@ -139,27 +134,36 @@ var _initialiseProps = function _initialiseProps() {
 
     this.changeState = function (e) {
         var props = _this2.props;
+        var checked = _this2.state.checked;
 
         clearTimeout(_this2.doubleClickFlag);
         if (props.onClick instanceof Function) {
             props.onClick(e);
         }
+        if (props.onDoubleClick instanceof Function) {
+            _this2.doubleClickFlag = setTimeout(function () {
+                //do function在此处写单击事件要执行的代码
+                _this2.change(props, checked);
+            }, 300);
+        } else {
+            _this2.change(props, checked);
+        }
         //执行延时
-        _this2.doubleClickFlag = setTimeout(function () {
-            //do function在此处写单击事件要执行的代码
-            if (props.disabled) {
-                return;
-            }
-            if (!('checked' in props)) {
-                _this2.setState({
-                    checked: !_this2.state.checked
-                });
-            }
+    };
 
-            if (props.onChange instanceof Function) {
-                props.onChange(!_this2.state.checked);
-            }
-        }, 300);
+    this.change = function (props, checked) {
+        if (props.disabled) {
+            return;
+        }
+        if (!('checked' in props)) {
+            _this2.setState({
+                checked: !checked
+            });
+        }
+
+        if (props.onChange instanceof Function) {
+            props.onChange(!checked);
+        }
     };
 
     this.handledbClick = function (e) {

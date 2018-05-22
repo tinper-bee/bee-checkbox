@@ -1,3 +1,8 @@
+<a name="1.0.10"></a>
+## [1.0.10](https://github.com/tinper-bee/checkbox/compare/v1.0.8...v1.0.10) (2018-05-22)
+
+
+
 <a name="1.0.8"></a>
 ## [1.0.8](https://github.com/tinper-bee/checkbox/compare/v1.0.7...v1.0.8) (2018-04-11)
 
