@@ -76,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(87);var Demo3 = __webpack_require__(88);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " Checkbox", "code": "/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\n\nimport React, {Component} from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo1 extends Component {\n    constructor(props) {\n        super(props);\n        this.state = {\n            checkedFlag: false\n        }\n        this.onChange = this.onChange.bind(this);\n    }\n\n    onChange(e) {\n        console.log(e);\n        this.setState({checkedFlag: e});\n    }\n\n    handleDblClick = (state) => {\n\t\tconsole.log(state);\n    }\n\n    render() {\n        return (\n            <div className=\"demo-checkbox\">\n                <Checkbox\n                    disabled\n                    className=\"test\">\n                    checkbox\n                </Checkbox>\n                <Checkbox\n                    onDoubleClick={ this.handleDblClick }\n                    ref=\"test\"\n                    checked={this.state.checkedFlag}\n                    onChange={this.onChange}>\n                    全选\n                </Checkbox>\n                <Checkbox\n                    ref=\"test\"\n                    indeterminate\n                    onChange={this.onChange}>\n                    半选\n                </Checkbox>\n            </div>\n        )\n    }\n}\n\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 多颜色`Checkbox`", "code": "/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\">checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\">checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " `colors`参数控制背景色", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }, { "example": _react2['default'].createElement(Demo3, null), "title": " Checkbox", "code": "/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo3 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\tchecked: false\n\t\t}\n\t}\n\tchangeCheck=()=> {\n\t\tthis.setState({checked:!this.state.checked});\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<button onClick={this.changeCheck.bind(this)}>change checkbox</button>\n\t\t\t\t <Checkbox checked={this.state.checked} onChange={this.changeCheck}>checkbox2</Checkbox>\n\t\t\t\t<Checkbox defaultChecked={this.state.checked}>checkbox2</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": ".demo-checkbox .u-checkbox {\n    display: block;\n}" }];
+	var Demo1 = __webpack_require__(84);var Demo2 = __webpack_require__(87);var Demo3 = __webpack_require__(88);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " Checkbox", "code": "/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\n\nimport React, {Component} from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo1 extends Component {\n    constructor(props) {\n        super(props);\n        this.state = {\n            checkedFlag: false\n        }\n        this.onChange = this.onChange.bind(this);\n    }\n\n    onChange(e) {\n        console.log(e);\n        this.setState({checkedFlag: e});\n    }\n\n    handleDblClick = (state) => {\n\t\tconsole.log(state);\n    }\n\n    render() {\n        return (\n            <div className=\"demo-checkbox\">\n                <Checkbox\n                    disabled\n                    className=\"test\">\n                    checkbox\n                </Checkbox>\n                <Checkbox\n                    onDoubleClick={ this.handleDblClick }\n                    ref=\"test\"\n                    checked={this.state.checkedFlag}\n                    onChange={this.onChange}>\n                    全选\n                </Checkbox>\n                <Checkbox\n                    ref=\"test\"\n                    indeterminate\n                    onChange={this.onChange}>\n                    半选\n                </Checkbox>\n            </div>\n        )\n    }\n}\n\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": "" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 多颜色`Checkbox`", "code": "/**\n * @title 多颜色`Checkbox`\n * @description `colors`参数控制背景色\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo2 extends Component {\n\trender(){\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<Checkbox colors=\"info\">checkbox</Checkbox>\n\t\t\t\t<Checkbox colors=\"dark\">checkbox</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n", "desc": " `colors`参数控制背景色", "scss_code": "" }, { "example": _react2['default'].createElement(Demo3, null), "title": " Checkbox", "code": "/**\n * @title Checkbox\n * @description `checked` 参数设置是否选中，`disabled`设置是否可用。\n */\n\nimport React, { Component } from 'react';\nimport { Checkbox } from 'tinper-bee';\n\nclass Demo3 extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {\n\t\t\tchecked: false\n\t\t}\n\t}\n\tchangeCheck=()=> {\n\t\tthis.setState({checked:!this.state.checked});\n\t}\n\trender () {\n\t\treturn (\n\t\t\t<div className=\"demo-checkbox\">\n\t\t\t\t<button onClick={this.changeCheck.bind(this)}>change checkbox</button>\n\t\t\t\t <Checkbox checked={this.state.checked} onChange={this.changeCheck}>checkbox2</Checkbox>\n\t\t\t\t<Checkbox defaultChecked={this.state.checked}>checkbox2</Checkbox>\n\t\t\t</div>\n\t\t)\n\t}\n}\n", "desc": " `checked` 参数设置是否选中，`disabled`设置是否可用。", "scss_code": "" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -7626,8 +7626,6 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _tinperBeeCore = __webpack_require__(26);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
 	function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -7639,9 +7637,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
-	
-	//import warning from 'warning';
-	
 	
 	var propTypes = {
 	
@@ -7753,22 +7748,30 @@
 	        if (props.onClick instanceof Function) {
 	            props.onClick(e);
 	        }
+	        if (props.onDoubleClick instanceof Function) {
+	            _this2.doubleClickFlag = setTimeout(function () {
+	                //do function在此处写单击事件要执行的代码
+	                _this2.change(props, checked);
+	            }, 300);
+	        } else {
+	            _this2.change(props, checked);
+	        }
 	        //执行延时
-	        _this2.doubleClickFlag = setTimeout(function () {
-	            //do function在此处写单击事件要执行的代码
-	            if (props.disabled) {
-	                return;
-	            }
-	            if (!('checked' in props)) {
-	                _this2.setState({
-	                    checked: !checked
-	                });
-	            }
+	    };
 	
-	            if (props.onChange instanceof Function) {
-	                props.onChange(!checked);
-	            }
-	        }, 300);
+	    this.change = function (props, checked) {
+	        if (props.disabled) {
+	            return;
+	        }
+	        if (!('checked' in props)) {
+	            _this2.setState({
+	                checked: !checked
+	            });
+	        }
+	
+	        if (props.onChange instanceof Function) {
+	            props.onChange(!checked);
+	        }
 	    };
 	
 	    this.handledbClick = function (e) {

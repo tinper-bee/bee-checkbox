@@ -1,8 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
-import {createChainedFunction} from 'tinper-bee-core';
-//import warning from 'warning';
 
 
 const propTypes = {
@@ -45,23 +43,32 @@ class Checkbox extends React.Component {
         if(props.onClick instanceof Function){
             props.onClick(e);
         }
+        if(props.onDoubleClick instanceof Function){
+            this.doubleClickFlag = setTimeout(() => {
+                //do function在此处写单击事件要执行的代码
+                this.change(props, checked)
+            },300);
+        }else{
+            this.change(props, checked)
+        }
         //执行延时
-        this.doubleClickFlag = setTimeout(() => {
-            //do function在此处写单击事件要执行的代码
-            if (props.disabled) {
-                return;
-            }
-            if (!('checked' in props)) {
-                this.setState({
-                    checked: !checked,
-                });
-            }
-
-            if (props.onChange instanceof Function) {
-                props.onChange(!checked);
-            }
-        },300);
     }
+
+    change = (props, checked) => {
+        if (props.disabled) {
+            return;
+        }
+        if (!('checked' in props)) {
+            this.setState({
+                checked: !checked,
+            });
+        }
+
+        if (props.onChange instanceof Function) {
+            props.onChange(!checked);
+        }
+    }
+
 
     handledbClick = (e) => {
         const { onDoubleClick } = this.props;

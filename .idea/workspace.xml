@@ -3,16 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="48cf07c6-9fed-495d-a6a1-981150ceb0f9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Checkbox.css" afterPath="$PROJECT_DIR$/build/Checkbox.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demolist/Demo1.scss" afterPath="$PROJECT_DIR$/demo/demolist/Demo1.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demolist/Demo2.scss" afterPath="$PROJECT_DIR$/demo/demolist/Demo2.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/demolist/Demo3.scss" afterPath="$PROJECT_DIR$/demo/demolist/Demo3.scss" />
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/demo.js" afterPath="$PROJECT_DIR$/dist/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/demo.js.map" afterPath="$PROJECT_DIR$/dist/demo.js.map" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Checkbox.js" afterPath="$PROJECT_DIR$/build/Checkbox.js" />
+>>>>>>> 3ad6d761bc5d1482df3786be55f074bd498cbc17
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/demo.css" afterPath="$PROJECT_DIR$/dist/demo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/demo.css.map" afterPath="$PROJECT_DIR$/dist/demo.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/demo.js" afterPath="$PROJECT_DIR$/dist/demo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/demo.js.map" afterPath="$PROJECT_DIR$/dist/demo.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Checkbox.scss" afterPath="$PROJECT_DIR$/src/Checkbox.scss" />
+=======
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Checkbox.js" afterPath="$PROJECT_DIR$/src/Checkbox.js" />
+>>>>>>> 3ad6d761bc5d1482df3786be55f074bd498cbc17
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,6 +43,7 @@
       <file leaf-file-name="Checkbox.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Checkbox.scss">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="260">
               <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
@@ -62,16 +76,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="1152">
+              <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+              <folding>
+                <marker date="1523427818272" expanded="true" signature="817:836" ph="..." />
+                <marker date="1523427818272" expanded="true" signature="1546:1603" ph="{...}" />
+              </folding>
+=======
+            <state relative-caret-position="364">
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+>>>>>>> 3ad6d761bc5d1482df3786be55f074bd498cbc17
               <folding />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checkbox.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Checkbox.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Checkbox.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="962">
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="250">
+              <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+=======
+            <state relative-caret-position="183">
+>>>>>>> 3ad6d761bc5d1482df3786be55f074bd498cbc17
               <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
                 <marker date="1525940511205" expanded="true" signature="362:462" ph="{&quot;colors&quot;: 'primary'...}" />
@@ -80,13 +116,32 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Checkbox.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/Checkbox.js">
+=======
       <file leaf-file-name="Demo1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/demolist/Demo1.js">
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1170">
               <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
+<<<<<<< HEAD
+                <marker date="1523427938769" expanded="true" signature="2432:2532" ph="{&quot;colors&quot;: 'primary'...}" />
+=======
                 <element signature="n#!!doc" expanded="true" />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
               </folding>
             </state>
           </provider>
@@ -115,8 +170,13 @@
       <file leaf-file-name="api.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/api.md">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="480">
+              <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+=======
             <state relative-caret-position="442">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="41" />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
               <folding />
             </state>
           </provider>
@@ -144,6 +204,7 @@
         <option value="$PROJECT_DIR$/demo/demolist/Demo3.js" />
         <option value="$PROJECT_DIR$/docs/api.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/Checkbox.js" />
         <option value="$PROJECT_DIR$/demo/demolist/Demo1.js" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -166,10 +227,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="946" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -368,17 +428,41 @@
       <workItem from="1513664433472" duration="87000" />
       <workItem from="1516435879941" duration="236000" />
       <workItem from="1516537674119" duration="1149000" />
+<<<<<<< HEAD
+      <workItem from="1523844020999" duration="598000" />
+      <workItem from="1526989602395" duration="324000" />
+=======
       <workItem from="1525849118655" duration="3069000" />
+<<<<<<< HEAD
       <workItem from="1525940086195" duration="1017000" />
       <workItem from="1530084115250" duration="1345000" />
+=======
+      <workItem from="1525940086195" duration="714000" />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
+>>>>>>> 3ad6d761bc5d1482df3786be55f074bd498cbc17
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="10916000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="946" extended-state="0" />
+=======
+    <option name="totallyTimeSpent" value="13845000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
+    <editor active="true" />
+>>>>>>> 3ad6d761bc5d1482df3786be55f074bd498cbc17
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -400,7 +484,11 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
+<<<<<<< HEAD
+    <option name="version" value="1" />
+=======
     <option name="processedProjectFiles" value="true" />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -438,7 +526,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+<<<<<<< HEAD
+          <folding>
+            <marker date="1523427818272" expanded="true" signature="817:836" ph="..." />
+            <marker date="1523427818272" expanded="true" signature="1546:1603" ph="{...}" />
+          </folding>
+=======
           <folding />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
         </state>
       </provider>
     </entry>
@@ -518,7 +613,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+<<<<<<< HEAD
+          <folding>
+            <marker date="1523427818272" expanded="true" signature="817:836" ph="..." />
+            <marker date="1523427818272" expanded="true" signature="1546:1603" ph="{...}" />
+          </folding>
+=======
           <folding />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
         </state>
       </provider>
     </entry>
@@ -583,7 +685,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+<<<<<<< HEAD
+          <folding>
+            <marker date="1523427818272" expanded="true" signature="817:836" ph="..." />
+            <marker date="1523427818272" expanded="true" signature="1546:1603" ph="{...}" />
+          </folding>
+=======
           <folding />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
         </state>
       </provider>
     </entry>
@@ -648,7 +757,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+<<<<<<< HEAD
+          <folding>
+            <marker date="1523427818272" expanded="true" signature="817:836" ph="..." />
+            <marker date="1523427818272" expanded="true" signature="1546:1603" ph="{...}" />
+          </folding>
+=======
           <folding />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
         </state>
       </provider>
     </entry>
@@ -717,11 +833,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/api_en.md">
+<<<<<<< HEAD
+      <provider editor-type-id="text-editor">
+=======
       <provider selected="true" editor-type-id="text-editor">
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+<<<<<<< HEAD
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+=======
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/demolist/Demo2.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -741,6 +873,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <marker date="1523427938769" expanded="true" signature="2432:2532" ph="{&quot;colors&quot;: 'primary'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/api.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+=======
         </state>
       </provider>
     </entry>
@@ -751,15 +907,32 @@
           <folding />
         </state>
       </provider>
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
           <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/demo/demolist/Demo1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Checkbox.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding>
+            <marker date="1523427818272" expanded="true" signature="817:836" ph="..." />
+            <marker date="1523427818272" expanded="true" signature="1546:1603" ph="{...}" />
+=======
     <entry file="file://$PROJECT_DIR$/src/Checkbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="962">
@@ -777,6 +950,7 @@
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+>>>>>>> 00ded1b3197a64ecb0a84f10536d218598f8aafc
           </folding>
         </state>
       </provider>
@@ -818,6 +992,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Checkbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
