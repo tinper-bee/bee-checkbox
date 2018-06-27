@@ -1,11 +1,4 @@
 
-<a name="1.1.0"></a>
-# [1.1.0](https://github.com/tinper-bee/checkbox/compare/v1.0.9...v1.1.0) (2018-06-27)
-
-
-### Features
-
-* bee-checkbox ([f89624e](https://github.com/tinper-bee/checkbox/commit/f89624e))
 
 <a name="1.0.10"></a>
 ## [1.0.10](https://github.com/tinper-bee/checkbox/compare/v1.0.9...v1.0.10) (2018-05-22)
