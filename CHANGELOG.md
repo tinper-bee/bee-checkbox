@@ -1,10 +1,11 @@
-<a name="1.1.0"></a>
-# [1.1.0](https://github.com/tinper-bee/checkbox/compare/v1.0.10...v1.1.0) (2018-06-27)
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/tinper-bee/checkbox/compare/v1.0.10...v1.1.1) (2018-09-14)
 
 
 ### Features
 
 * bee-checkbox ([f89624e](https://github.com/tinper-bee/checkbox/commit/f89624e))
+* **bee-checkbox:** 修改Checkbox组件样式 ([22bb057](https://github.com/tinper-bee/checkbox/commit/22bb057))
 
 
 
