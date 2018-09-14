@@ -148,6 +148,8 @@ var _initialiseProps = function _initialiseProps() {
         } else {
             _this2.change(props, checked);
         }
+        e.stopPropagation();
+        e.preventDefault();
         //执行延时
     };
 
