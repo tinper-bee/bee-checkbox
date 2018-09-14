@@ -51,6 +51,8 @@ class Checkbox extends React.Component {
         }else{
             this.change(props, checked)
         }
+        e.stopPropagation();
+        e.preventDefault();
         //执行延时
     }
 
