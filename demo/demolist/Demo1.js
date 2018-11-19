@@ -30,7 +30,7 @@ class Demo1 extends Component {
             <div className="demo-checkbox">
                 <Checkbox
                     disabled
-                    className="test">
+                    className="test" >
                 </Checkbox>
                 <Checkbox
                     onDoubleClick={ this.handleDblClick }
