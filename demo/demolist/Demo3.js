@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import Checkbox from '../../src';
+import Button from 'bee-button'
 
 class Demo3 extends Component {
 	constructor(props) {
@@ -19,7 +20,7 @@ class Demo3 extends Component {
 	render () {
 		return (
 			<div className="demo-checkbox">
-				<button onClick={this.changeCheck.bind(this)}>change checkbox</button>
+				<Button onClick={this.changeCheck.bind(this)}>change checkbox</Button>
 				 <Checkbox checked={this.state.checked} onChange={this.changeCheck}>checkbox2</Checkbox>
 				<Checkbox defaultChecked={this.state.checked}>checkbox2</Checkbox>
 			</div>

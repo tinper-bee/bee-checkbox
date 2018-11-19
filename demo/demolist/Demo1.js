@@ -31,7 +31,6 @@ class Demo1 extends Component {
                 <Checkbox
                     disabled
                     className="test">
-                    checkbox
                 </Checkbox>
                 <Checkbox
                     onDoubleClick={ this.handleDblClick }
