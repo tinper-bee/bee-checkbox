@@ -1,3 +1,13 @@
+<a name="1.2.2"></a>
+## [1.2.2](https://github.com/tinper-bee/checkbox/compare/v1.2.1...v1.2.2) (2018-11-19)
+
+
+### Features
+
+* **bee-checkbox:** 完善文档 ([70eeea1](https://github.com/tinper-bee/checkbox/commit/70eeea1))
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/tinper-bee/checkbox/compare/v1.1.1...v1.2.1) (2018-11-19)
 
