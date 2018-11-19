@@ -36,8 +36,11 @@ import "./node_modules/build/bee-checkbox.css"
 
 
 ## API
+
+## Checkbox
+
 |参数|说明|类型|默认值|
-|---|----|---|------|
+|:--|:---|:--|:---|
 |className|类名|string|-|
 |color|one of: `primary` `success` `info` `error`  `warning` `dark`|string|''|
 |disabled|是否可用|bool|false|
@@ -47,6 +50,16 @@ import "./node_modules/build/bee-checkbox.css"
 |indeterminate|部分选中|bool|-|
 |onDoubleClick|双击事件|function|function(checked, event){}|
 |onClick|单击事件|function|function(event){}|
+|value|选中的值，需配合CheckboxGroup使用|string|-|
+
+
+## CheckboxGroup
+
+|参数|说明|类型|默认值|
+|:--|:---|:--|:---|
+|className|类名|string|-|
+|onChange|监听改变|function|-|
+|value|设置默认值|array|[]|
 
 #### 开发调试
 
