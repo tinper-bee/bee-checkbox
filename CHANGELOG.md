@@ -1,3 +1,13 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/tinper-bee/checkbox/compare/v1.1.1...v1.2.1) (2018-11-19)
+
+
+### Features
+
+* **bee-checkbox:** 新增checkboxGroup ([5b4a958](https://github.com/tinper-bee/checkbox/commit/5b4a958))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/tinper-bee/checkbox/compare/v1.0.10...v1.1.1) (2018-09-14)
 
