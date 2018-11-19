@@ -1,3 +1,13 @@
+<a name="1.2.3"></a>
+## [1.2.3](https://github.com/tinper-bee/checkbox/compare/v1.2.2...v1.2.3) (2018-11-19)
+
+
+### Bug Fixes
+
+* **bee-checkbox:** 新增在form中使用示例 ([89dded1](https://github.com/tinper-bee/checkbox/commit/89dded1))
+
+
+
 <a name="1.2.2"></a>
 ## [1.2.2](https://github.com/tinper-bee/checkbox/compare/v1.2.1...v1.2.2) (2018-11-19)
 
