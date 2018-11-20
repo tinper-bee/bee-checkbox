@@ -1,3 +1,13 @@
+<a name="1.2.4"></a>
+## [1.2.4](https://github.com/tinper-bee/checkbox/compare/v1.2.3...v1.2.4) (2018-11-20)
+
+
+### Features
+
+* **bee-checkbox:** 全键盘操作 ([3ee479b](https://github.com/tinper-bee/checkbox/commit/3ee479b))
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/tinper-bee/checkbox/compare/v1.2.2...v1.2.3) (2018-11-19)
 
