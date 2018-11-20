@@ -10,8 +10,12 @@ class Demo2 extends Component {
 	render(){
 		return (
 			<div className="demo-checkbox">
-				<Checkbox colors="info">checkbox</Checkbox>
-				<Checkbox colors="dark">checkbox</Checkbox>
+				<Checkbox colors="primary">primary</Checkbox>
+				<Checkbox colors="success">success</Checkbox>
+				<Checkbox colors="info">info</Checkbox>
+				<Checkbox colors="error">error</Checkbox>
+				<Checkbox colors="warning">warning</Checkbox>
+				<Checkbox colors="dark">dark</Checkbox>
 			</div>
 		)
 	}
