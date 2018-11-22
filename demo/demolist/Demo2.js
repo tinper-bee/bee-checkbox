@@ -13,7 +13,7 @@ class Demo2 extends Component {
 				<Checkbox colors="primary">primary</Checkbox>
 				<Checkbox colors="success">success</Checkbox>
 				<Checkbox colors="info">info</Checkbox>
-				<Checkbox colors="error">error</Checkbox>
+				<Checkbox colors="danger">danger</Checkbox>
 				<Checkbox colors="warning">warning</Checkbox>
 				<Checkbox colors="dark">dark</Checkbox>
 			</div>
