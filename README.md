@@ -61,6 +61,12 @@ import "./node_modules/build/bee-checkbox.css"
 |onChange|监听改变|function|-|
 |value|设置默认值|array|[]|
 
+## 已支持的键盘操作
+
+|按键|功能|
+|:---|:----|
+|space |选中/反选Checkbox|
+
 #### 开发调试
 
 ```sh
