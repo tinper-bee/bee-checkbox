@@ -2152,7 +2152,7 @@
   color: rgb(255,255,255) !important; }
 
 .bg-primary {
-  background-color: rgb(30,136,229) !important; }
+  background-color: rgb(229,57,53) !important; }
 
 .bg-primary-contrast {
   background-color: rgb(255,255,255) !important; }
@@ -2167,7 +2167,7 @@
   background-color: rgb(255,255,255) !important; }
 
 .text-primary {
-  color: rgb(30,136,229) !important; }
+  color: rgb(229,57,53) !important; }
 
 .text-primary-contrast {
   color: rgb(255,255,255) !important; }
@@ -2418,9 +2418,6 @@ i.uf {
 /*
  * 选择时删除文本阴影，及设置默认选中颜色
  */
-::-moz-selection {
-  background: rgb(187,222,251);
-  text-shadow: none; }
 ::selection {
   background: rgb(187,222,251);
   text-shadow: none; }
@@ -5976,7 +5973,7 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
   .u-button:active {
     background-color: rgb(189,189,189); }
   .u-button.colored {
-    color: rgb(30,136,229); }
+    color: rgb(229,57,53); }
     .u-button.colored:focus:not(:active) {
       background-color: rgb(189,189,189); }
   .u-button.disable {
@@ -6026,8 +6023,8 @@ input.u-button[type="submit"] {
 
 .u-button-primary {
   color: rgb(255,255,255);
-  background-color: rgb(30,136,229);
-  border: 1px rgb(30,136,229) solid; }
+  background-color: rgb(229,57,53);
+  border: 1px rgb(229,57,53) solid; }
   .u-button-primary.focus, .u-button-primary:focus, .u-button-primary:hover {
     background-color: rgb(66,165,245);
     border-color: rgb(66,165,245); }
@@ -6128,8 +6125,8 @@ input.u-button[type="submit"] {
     border-color: rgb(0,151,167); }
 
 .u-button-border.u-button-primary {
-  color: rgb(30,136,229);
-  border: 1px rgb(30,136,229) solid; }
+  color: rgb(229,57,53);
+  border: 1px rgb(229,57,53) solid; }
   .u-button-border.u-button-primary.focus, .u-button-border.u-button-primary:focus, .u-button-border.u-button-primary:hover {
     background-color: rgb(66,165,245);
     border-color: rgb(66,165,245);
@@ -6222,10 +6219,10 @@ input.u-button[type="submit"] {
   .u-checkbox input[disabled] {
     cursor: not-allowed; }
   .u-checkbox input[type='checkbox']:focus + .u-checkbox-label:before {
-    border-color: #1e88e5; }
+    border-color: rgb(229,57,53); }
   .u-checkbox.is-checked .u-checkbox-label:before {
-    box-shadow: inset 0 0 0 10px rgb(30,136,229);
-    border-color: rgb(30,136,229); }
+    box-shadow: inset 0 0 0 10px rgb(229,57,53);
+    border-color: rgb(229,57,53); }
   .u-checkbox.is-checked .u-checkbox-label:after {
     color: #fff;
     content: "\e658";
@@ -6267,8 +6264,8 @@ input.u-button[type="submit"] {
   font-size: 14px; }
 
 .u-checkbox.u-checkbox-indeterminate .u-checkbox-label:before {
-  box-shadow: inset 0 0 0 10px #1e88e5;
-  border-color: #1e88e5; }
+  box-shadow: inset 0 0 0 10px rgb(229,57,53);
+  border-color: rgb(229,57,53); }
 
 .u-checkbox.u-checkbox-success.is-checked .u-checkbox-label:before {
   box-shadow: inset 0 0 0 10px rgb(76,175,80);
