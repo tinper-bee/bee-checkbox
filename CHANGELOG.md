@@ -1,3 +1,8 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/tinper-bee/checkbox/compare/v1.2.6...v2.0.0) (2019-01-22)
+
+
+
 <a name="1.2.6"></a>
 ## [1.2.6](https://github.com/tinper-bee/checkbox/compare/v1.2.5...v1.2.6) (2018-11-22)
 
@@ -19,22 +24,17 @@
 
 
 <a name="1.2.4"></a>
-## [1.2.4](https://github.com/tinper-bee/checkbox/compare/v1.2.3...v1.2.4) (2018-11-20)
-
-
-### Features
-
-* **bee-checkbox:** 全键盘操作 ([3ee479b](https://github.com/tinper-bee/checkbox/commit/3ee479b))
-
-
-
-<a name="1.2.3"></a>
-## [1.2.3](https://github.com/tinper-bee/checkbox/compare/v1.2.2...v1.2.3) (2018-11-19)
+## [1.2.4](https://github.com/tinper-bee/checkbox/compare/v1.2.2...v1.2.4) (2018-11-20)
 
 
 ### Bug Fixes
 
 * **bee-checkbox:** 新增在form中使用示例 ([89dded1](https://github.com/tinper-bee/checkbox/commit/89dded1))
+
+
+### Features
+
+* **bee-checkbox:** 全键盘操作 ([3ee479b](https://github.com/tinper-bee/checkbox/commit/3ee479b))
 
 
 
