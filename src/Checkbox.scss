@@ -1,13 +1,14 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
 
-
+$checkbox-label-width:16px;
+$checkbox-label-height:16px;
 .u-checkbox {
 	display: inline-block;
 	position: relative;
 	margin: 0 8px;
-	height: 16px;
-	line-height: 16px;
+	height: $checkbox-label-height;
+	line-height: $checkbox-label-height;
 	font-size: 14px;
 	white-space: nowrap;
     cursor: pointer;
@@ -41,7 +42,7 @@
 		.u-checkbox-label:after {
 			color: $checkbox-color;
 			content: "\e658";
-		    line-height: 16px;
+		    line-height: $checkbox-label-height;
 			font-size: 12px;
 			font-weight: 600;
 		}
@@ -62,7 +63,7 @@
 	    display: inline-block;
 	    //position: relative;
 		padding-left: 25px;
-		line-height: 16px;
+		line-height: $checkbox-label-height;
 		color: #212121;
 	    &:before {
 		    -moz-border-radius: $border-radius-base;
@@ -77,8 +78,8 @@
 		    content: '';
 		    font-family: 'uf';
 		    display: inline-block;
-		    width: 16px;
-		    height: 16px;
+		    width: $checkbox-label-width;
+		    height: $checkbox-label-height;
 		    left: 0;
 			top: 0;
 		    text-align: center;
@@ -88,8 +89,8 @@
 			content: '';
 		    font-family: 'uf';
 		    display: inline-block;
-		    width: 16px;
-		    height: 16px;
+		    width: $checkbox-label-width;
+		    height: $checkbox-label-height;
 		    left: 0;
 		    top: 0;
 		    text-align: center;
@@ -118,7 +119,7 @@
 		&:after{
 			color: $checkbox-color;
 			content: "\e6ce";
-			line-height: 16px;
+			line-height: $checkbox-label-height;
 			font-size: 12px;
 			font-weight: 600;
 		}

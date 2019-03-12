@@ -1,13 +1,13 @@
 /**
  * @title 红色填充的 Checkbox
- * @description `inverse` 参数设置选中为红色填充，`disabled`设置是否可用。
+ * @description `inverse` 参数设置选中为红色填充。
  */
 
 
 import React, {Component} from 'react';
 import Checkbox from '../../src';
 
-class Demo1 extends Component {
+class Demo6 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -43,4 +43,4 @@ class Demo1 extends Component {
     }
 }
 
-export default Demo1;
+export default Demo6;
