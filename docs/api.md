@@ -40,12 +40,14 @@ import 'bee-checkbox/build/Checkbox.css';
 
 ### CheckboxGroup
 
-|参数|说明|类型|默认值|
-|:--|:---|:--|:---|
-|className|类名|string|-|
-|onChange|监听改变|function|-|
-|value|设置默认值|array|[]|
-|disabled|是否可用|bool|false|
+|参数|说明|类型|默认值|版本|
+|:--|:---|:--|:---|:---|
+|className|类名|string|-| |
+|onChange|监听改变|function|-| |
+|value|设置默认值|array|[]| |
+|disabled|是否可用|bool|false| |
+|options|指定可选项|string[] | []|2.0.7+|
+|defaultValue|默认选中的选项|string[] | []|2.0.7+|
 
 ### 已支持的键盘操作
 
