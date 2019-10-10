@@ -122,7 +122,6 @@ var CheckboxGroup = function (_React$Component) {
             options = props.options;
 
         var classes = clsPrefix;
-        console.log('state.values: ', state.values);
         if (className) classes += ' ' + className;
         if (options && options.length > 0) {
             children = this.getOptions().map(function (option) {
